@@ -20,6 +20,8 @@
 		294EA42F2112A87900991309 /* Success.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294EA42E2112A87900991309 /* Success.swift */; };
 		294EA4332112AC1400991309 /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294EA4322112AC1400991309 /* Campaign.swift */; };
 		294EA4362112ADFB00991309 /* CampaignCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294EA4352112ADFB00991309 /* CampaignCell.swift */; };
+		297C65662113CBD3008F2A55 /* CampaignScans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297C65652113CBD3008F2A55 /* CampaignScans.swift */; };
+		297C65682113E65F008F2A55 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297C65672113E65F008F2A55 /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		294EA42E2112A87900991309 /* Success.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Success.swift; sourceTree = "<group>"; };
 		294EA4322112AC1400991309 /* Campaign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campaign.swift; sourceTree = "<group>"; };
 		294EA4352112ADFB00991309 /* CampaignCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignCell.swift; sourceTree = "<group>"; };
+		297C65652113CBD3008F2A55 /* CampaignScans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignScans.swift; sourceTree = "<group>"; };
+		297C65672113E65F008F2A55 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,9 +74,9 @@
 		294EA40C2112655400991309 /* HajjCourier */ = {
 			isa = PBXGroup;
 			children = (
+				294EA42A2112A06000991309 /* Services */,
 				294EA4342112ADD200991309 /* Views */,
 				294EA4312112ABFB00991309 /* Models */,
-				294EA42A2112A06000991309 /* Services */,
 				294EA42B2112A06D00991309 /* Controllers */,
 				294EA42C2112A0A300991309 /* Supporting Files */,
 				294EA42D2112A0C400991309 /* Storyboards */,
@@ -98,6 +102,8 @@
 				294EA4242112A00D00991309 /* NewCampaign.swift */,
 				294EA4262112A01F00991309 /* NewHotel.swift */,
 				294EA42E2112A87900991309 /* Success.swift */,
+				297C65652113CBD3008F2A55 /* CampaignScans.swift */,
+				297C65672113E65F008F2A55 /* Login.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -210,10 +216,12 @@
 				294EA4102112655400991309 /* MainController.swift in Sources */,
 				294EA42F2112A87900991309 /* Success.swift in Sources */,
 				294EA4292112A03900991309 /* DataService.swift in Sources */,
+				297C65682113E65F008F2A55 /* Login.swift in Sources */,
 				294EA4362112ADFB00991309 /* CampaignCell.swift in Sources */,
 				294EA42321129FF300991309 /* Campaigns.swift in Sources */,
 				294EA4252112A00D00991309 /* NewCampaign.swift in Sources */,
 				294EA40E2112655400991309 /* AppDelegate.swift in Sources */,
+				297C65662113CBD3008F2A55 /* CampaignScans.swift in Sources */,
 				294EA4162112655400991309 /* HajjCourier.xcdatamodeld in Sources */,
 				294EA4332112AC1400991309 /* Campaign.swift in Sources */,
 				294EA4272112A01F00991309 /* NewHotel.swift in Sources */,

@@ -24,16 +24,19 @@ class Campaigns: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        DataService.instance.campaigns = [
-            Campaign(id: "1523DE", from: "Cairo", to: "Jedah", date: "12/5/2012"),
-            Campaign(id: "1347FE", from: "Alex", to: "Makka", date: "6/7/2019")
-        ]
         campaignsTable.tableFooterView = UIView()
         campaignsTable.dataSource = self
         campaignsTable.delegate = self
         campaignsTable.reloadData()
     }
 
+//    func create() {
+//        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
+//        let campaign = Campaign(context: managedContext)
+//
+//        campaign.id = "id"
+//        campaign.date = "date"
+//    }
 
 }
 
@@ -50,5 +53,17 @@ extension Campaigns: UITableViewDataSource {
 }
 
 extension Campaigns: UITableViewDelegate {
-    
+    @available(iOS 11.0, *)
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let scan = UIContextualAction(style: .normal, title: "Scan") { (action, view, nil) in
+
+            guard let campaignScansVC = self.storyboard?.instantiateViewController(withIdentifier: "CampaignScansVC") as? CampaignScans else { return }
+            campaignScansVC.initData(title: self.campaignsArray[indexPath.row].id)
+            self.navigationController?.pushViewController(campaignScansVC, animated: true)
+        }
+        scan.backgroundColor = #colorLiteral(red: 0.1294117719, green: 0.2156862766, blue: 0.06666667014, alpha: 1)
+        scan.image = #imageLiteral(resourceName: "scan-list")
+        
+        return UISwipeActionsConfiguration(actions: [scan])
+    }
 }

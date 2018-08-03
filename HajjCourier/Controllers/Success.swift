@@ -18,7 +18,7 @@ class Success: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(MoveOn), userInfo: nil, repeats: false)
+        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(MoveOn), userInfo: nil, repeats: false)
         
     }
     

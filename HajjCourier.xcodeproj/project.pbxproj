@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290B4EF02113FAD4009A01F9 /* NewPilgrim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B4EEF2113FAD4009A01F9 /* NewPilgrim.swift */; };
+		290B4EF22113FF50009A01F9 /* PilgrimStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B4EF12113FF50009A01F9 /* PilgrimStatus.swift */; };
 		294EA40E2112655400991309 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294EA40D2112655400991309 /* AppDelegate.swift */; };
 		294EA4102112655400991309 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294EA40F2112655400991309 /* MainController.swift */; };
 		294EA4132112655400991309 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 294EA4112112655400991309 /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		290B4EEF2113FAD4009A01F9 /* NewPilgrim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPilgrim.swift; sourceTree = "<group>"; };
+		290B4EF12113FF50009A01F9 /* PilgrimStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilgrimStatus.swift; sourceTree = "<group>"; };
 		294EA40A2112655400991309 /* HajjCourier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HajjCourier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		294EA40D2112655400991309 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		294EA40F2112655400991309 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 				294EA42E2112A87900991309 /* Success.swift */,
 				297C65652113CBD3008F2A55 /* CampaignScans.swift */,
 				297C65672113E65F008F2A55 /* Login.swift */,
+				290B4EEF2113FAD4009A01F9 /* NewPilgrim.swift */,
+				290B4EF12113FF50009A01F9 /* PilgrimStatus.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -215,12 +221,14 @@
 			files = (
 				294EA4102112655400991309 /* MainController.swift in Sources */,
 				294EA42F2112A87900991309 /* Success.swift in Sources */,
+				290B4EF22113FF50009A01F9 /* PilgrimStatus.swift in Sources */,
 				294EA4292112A03900991309 /* DataService.swift in Sources */,
 				297C65682113E65F008F2A55 /* Login.swift in Sources */,
 				294EA4362112ADFB00991309 /* CampaignCell.swift in Sources */,
 				294EA42321129FF300991309 /* Campaigns.swift in Sources */,
 				294EA4252112A00D00991309 /* NewCampaign.swift in Sources */,
 				294EA40E2112655400991309 /* AppDelegate.swift in Sources */,
+				290B4EF02113FAD4009A01F9 /* NewPilgrim.swift in Sources */,
 				297C65662113CBD3008F2A55 /* CampaignScans.swift in Sources */,
 				294EA4162112655400991309 /* HajjCourier.xcdatamodeld in Sources */,
 				294EA4332112AC1400991309 /* Campaign.swift in Sources */,
